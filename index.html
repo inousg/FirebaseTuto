@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>What did I watch ?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="apple-touch-icon" href="">
+        
+        <link rel="shortcut icon" sizes="196x196" href="">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,500,300,300italic,500italic|Roboto+Condensed:400,300" rel="stylesheet">
+        <link href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="styles/bootstrap.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        
+        <script src="scripts/modernizr.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".header" data-offset="80">
+    
+        <div id="ip-container" class="ip-container">
+            <header class="ip-header">
+                <div class="ip-loader">
+                    <svg width="60px" height="60px" viewBox="0 0 80 80" class="ip-inner">
+                        <path d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" class="ip-loader-circlebg"></path>
+                        <path id="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" class="ip-loader-circle"></path>
+                    </svg>
+                </div>
+            </header>
+            <div class="ip-main">
+                <!-- Mobile nav -->
+                <div id="cbp-spmenu" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+                    <div class="mobile_nav_close_button"><a id="hideRight" href=""><span class="close_icon zmdi zmdi-arrow-right"></span></a></div>
+                    <nav id="mobile_menu_content" class="navbar-nav-mobile">
+                        <a href="#faq">Database</a>
+                        <a href="#firebase">Firebase</a>
+                        <a href="#doc">Doc</a>
+                    </nav>
+                </div>
+                <header id="header" class="header navbar navbar-light animated">
+                    <div class="container">
+                        <a href="" class="navbar-brand">
+                            <span class="logo" style="font-weight:700; font-size: 15px;">W ²</span>
+                            <span class="brand-txt">
+                                <span class="dabude-dabuda">W</span>hat did I <span class="dabude-dabuda">w</span>atch ?
+                            </span>            
+                        </a>
+                        <div class="navbar">
+                            <ul class="nav navbar-nav pull-right gras">
+                                <li class="nav-item"><a style="font-weight:400;" href="#faq">Database</a></li>
+                                <li class="nav-item"><a style="font-weight:400;" href="#firebase">Firebase</a></li>
+                                <li class="nav-item"><a style="font-weight:400;" href="#doc">Doc</a></li>
+                                <li class="nav-item "><a href="#contact" class="btn btn-default btn-cta btn-lg btn-raised ui-wave bouton" style="color:#fff; background-color:#0a84ff;font-weight:500;">Add a show<span class="zmdi zmdi-chevron-right"></span></a></li>
+                    
+                            </ul>
+                            <div class="pull-right togger-container"><span id="showRight" class="zmdi zmdi-menu navbar-toggler"></span></div>
+                        </div>
+                    </div>
+                </header>
+                <div class="main-content">
+                    <div id="hero" class="hero">
+                        <div class="hero-inner"> 
+                            <div class="container">
+                                <div class="col-lg-9 col-lg-offset-2">
+                                <h2 class="section-heading-underline">Restart watching immediately your favorite tv shows.</h2>
+
+                                    <p>I bet you forgot the number of the last episode you saw of One Piece, didn't you ? Yeah me too. </p>
+
+                                    <p>Let's show you how to build a proper tv shows database so you never lost count again!</p>  
+
+                                    <a href="#faq" class="btn btn-default btn-cta btn-lg btn-raised ui-wave bouton">
+                                        Start Tutorial<span class="zmdi zmdi-chevron-right"></span></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div id="faq" class="faq">
+                        <div class="container">
+                            <header>
+                            <h2 class="section-heading-underline">Database</h2>
+                            </header>
+                            <ul class="faq-list">
+                                <li class="wow fadeInLeft">
+                                    <h4 class="faq-q">What is a database ?</h4>
+                                    <p class="faq-a">A database (DB) is a structured collection of data, accessible and usable via computer programs. 
+                                        It is always paired with a <strong>Database management system (DBMS)</strong>. <br>
+                                        A DBMS is a software system that enables users to define, create, maintain and control access to the database. Its core functionality is the <strong>storage, retrieval and update of data</strong>.
+                                    </p>
+                                </li>
+                                <li class="wow fadeInRight">
+                                    <h4 class="faq-q">How to create a database ? (step #1)</h4>
+                                    <p class="faq-a">First you have to choose a DBMS, like <a href="https://www.mysql.com/">MySQL</a> or <a href="https://www.mongodb.com/">MongoDB</a>. 
+                                        In fact there are many ways to deal with a DB, so you need to select a DMBS accordingly.<br>
+                                        A <strong>relational database</strong> for example organizes its data through multiple tables (called relations) of columns and rows, with a unique key identifying each row. To use it you will need a relational database management system (RDBMS).
+                                        </p>
+                                </li>
+                                
+                                <li data-wow-delay="0.15s" class="wow fadeInLeft">
+                                    <h4 class="faq-q">How to create a database ? (step #2)</h4>
+                                    <p class="faq-a">Once you select a DBMS, you have to learn a query language it features. SQL (Structured Query Language) the most famous one is often used to manage relational databases.
+                                        <br>From now on, you can administrate your database thanks to this language. It is possible to create some tables, update and delete them. You can also select particular data from your DB.
+                                    </p>    
+                                </li>
+                                <li data-wow-delay="0.15s" class="wow fadeInRight">
+                                    <h4 class="faq-q">A relational database table</h4>
+                                    <p class="faq-a"><img src="images/database.png" width="90%"></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="firebase" class="faq">
+                        <div class="container">
+                            <header>
+                            <h2 class="section-heading-underline">Firebase</h2>
+                            </header>
+                            <ul class="faq-list">
+                                <li class="wow fadeInLeft">
+                                    <h4 class="faq-q">What is Firebase ?</h4>
+                                    <p class="faq-a">Firebase is a mobile and web application development platform currently owned by Google. It helps developers to build, improve, and grow an application. 
+                                        This includes things like analytics, authentication, databases, configuration, file storage, push messaging, and the list goes on.<br>
+                                        You are going to use one of these services : Firebase Realtime Database.
+                                    </p>
+                                </li>
+                                <li class="wow fadeInRight">
+                                    <h4 class="faq-q">Step #1 - Create a project</h4>
+                                    <p class="faq-a">
+                                        Go to <a href="https://firebase.google.com/">Firebase</a>, click get started and create a new project.
+                                        Enter the name of your project and do not enable Google analytics, you don't need it.<br>
+                                        Once the project created, click on it to discover the project dashboard. You must now add your application to the project.
+                                        Choose a web app but do not set up Firebase Hosting. When you are finished, Firebase must have given you some scripts.
+                                    </p>
+                                </li>
+                                
+                                <li data-wow-delay="0.15s" class="wow fadeInLeft">
+                                    <h4 class="faq-q">Step #2 - Recover the scripts</h4>
+                                    <p class="faq-a">
+                                        Recover these scripts and add them at the bottom of your html page as asked. 
+                                        If you didn't copy them you can retrieve them in your project settings.<br>
+                                        They must look like this :
+                                        <br><br>
+                                        <img src="images/db-script.PNG" width="90%">
+                                    </p>    
+                                </li>
+                                <li data-wow-delay="0.15s" class="wow fadeInRight">
+                                    <h4 class="faq-q">Step #3 - Create your database</h4>
+                                    <p class="faq-a">Now go to your project dashboard and click on Database on the navbar.
+                                        Do not use Cloud Firestore but scroll down, <strong>create a "Realtime Database"</strong> and start in test mode so you can access your data from your local machine.<br>
+                                        Tadaaa ! You have created your database, try to modify the data manually.
+                                        <br><br>
+                                        <img src="images/realtime.PNG" width="95%">
+                                    </p>
+                                </li>
+                                <li data-wow-delay="0.30s" class="wow fadeInLeft">
+                                    <h4 class="faq-q">A NoSQL Database</h4>
+                                    <p class="faq-a">
+                                        Before we go further, you must know that Firebase does not use a relational database but a NoSQL Database (non relationnal database).
+                                        It means it doesn't use tables like we have seen precedently.<br> 
+                                        Firebase implements a document-oriented database, based on the JSON data structure.
+                                        
+                                    
+                                    </p>    
+                                </li>
+                                <li data-wow-delay="0.30s" class="wow fadeInRight">
+                                    <h4 class="faq-q">JSON data-structure</h4>
+                                    <p class="faq-a">The firebase database is in fact a single JSON tree. You can read the doc about it <a href="https://firebase.google.com/docs/database/web/structure-data">here</a>. <br>
+                                        JSON objects are written in key/value pairs.
+                                        When you start adding data to your database it automatically creates a node in the existing JSON structure with an associated key.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="doc" class="faq">
+                        <div class="container">
+                            <header>
+                            <h2 class="section-heading-underline">Documentation</h2>
+                            </header>
+                            <ul class="faq-list">
+                                <li class="wow fadeInLeft">
+                                    <h4 class="faq-q">Manage your database </h4>
+                                    <p class="faq-a">
+                                        Now that you have created the database with firebase, you need to learn how to manage it.
+                                        Make sure you have these two scripts in your html page after the firebase-app.js one : <br><br>
+                                        <img src="images/script-auth-db.PNG" width="90%"> <br> <br>
+                                        Also create a database variable :<br> <strong>let db = firebase.database();</strong>
+                                        <br> <br>
+                                        Code a form so you can send informations to the database. 
+                                        Add a onSubmit() event listener to this form, this way it will trigger your create() function when submitted.
+                                    </p>
+                                </li>
+                                <li class="wow fadeInRight">
+                                    <h4 class="faq-q">Creating data</h4>
+                                    <p class="faq-a">
+                                        You can read the doc about it <a href="https://firebase.google.com/docs/database/web/read-and-write">here</a>.
+                                        <br><br>
+                                        <img src="images/form.PNG" width="90%"> <br> <br>
+                                        <img src="images/create.PNG" width="90%">
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                
+                    <div id="contact" data-stellar-background-ratio="0.6" class="contact">
+                        <div class="row">       
+                            <div class="col-sm-12 col-md-6">                                
+                                <form novalidate class="form-horizontal" name="tvShowForm" method="post" onsubmit="createTvShow(); return false;">
+                                    <fieldset>
+                                        <div class="form-group wow fadeInRight">
+                                            <div class="ui-input-group">
+                                                <input name="title" type="text" required class="form-control" value="">
+                                                <span class="input-bar"></span>
+                                                <label>Title</label>
+                                            </div>
+                                        </div>
+                                        <div data-wow-delay="0.15s" class="form-group wow fadeInRight">
+                                            <div class="ui-input-group">
+                                                <input name="episode" type="text" required class="form-control" value="">
+                                                <span class="input-bar"></span>
+                                                <label>Episode</label>
+                                            </div>
+                                        </div>
+                                        <div data-wow-delay="0.30s" class="form-group wow fadeInRight">
+                                            <div class="ui-input-group">
+                                                <input name="season" type="text" required class="form-control" value="">
+                                                <span class="input-bar"></span>
+                                                <label>Season</label>
+                                            </div>
+                                        </div>
+                                        <div data-wow-delay="0.45s" class="form-group wow fadeInRight">
+                                            <div class="ui-input-group">
+                                                <textarea name="comment" type="text" required rows="4" class="form-control"></textarea>
+                                                <span class="input-bar"></span>
+                                                <label>Comment</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="divider"></div>
+
+                                        <div data-wow-delay="0.6s" class="form-group wow fadeInUp">
+                                            <input type="submit" class="btn btn-raised btn-primary btn-w-sm ui-wave" value="Validate" />
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6">
+                            <h2 class="section-heading-underline">Add an anime</h3> 
+                                <form novalidate class="form-horizontal" method="post" action=""> 
+                                    <fieldset>
+                                        <div class="form-group wow fadeInRight">
+                                            <div class="ui-input-group">
+                                                <input name="title2" type="text" required class="form-control" value="">
+                                                <span class="input-bar"></span>
+                                                <label>Title</label>
+                                            </div>
+                                        </div>
+
+                                        <div data-wow-delay="0.15s" class="form-group wow fadeInRight">
+                                            <div class="ui-input-group">
+                                                <input name="episode2" type="text" required class="form-control" value="">
+                                                <span class="input-bar"></span>
+                                                <label>Episode</label>
+                                            </div>
+                                        </div>
+                                        <div data-wow-delay="0.30s" class="form-group wow fadeInRight">
+                                            <div class="ui-input-group">
+                                                <input name="episode" type="text" required class="form-control" value="">
+                                                <span class="input-bar"></span>
+                                                <label>Season</label>
+                                            </div>
+                                        </div>
+                                        <div data-wow-delay="0.45s" class="form-group wow fadeInRight">
+                                            <div class="ui-input-group">
+                                                <textarea name="comment2" type="text" required rows="4" class="form-control"></textarea>
+                                                <span class="input-bar"></span>
+                                                <label>Comment</label>
+                                            </div>
+                                        </div>
+                                 
+                                        <div class="divider"></div> 
+                                        <div data-wow-delay="0.6s" class="form-group wow fadeInLeft"> 
+                                            <input type="submit" class="btn btn-raised btn-primary btn-w-sm ui-wave" value="Validate">
+                                        </div> 
+                                    </fieldset> 
+                                </form>
+                            </div>
+                        </div>                        
+                    </div>     
+                </div>
+                <footer class="footer text-center">
+                </footer>
+            </div>
+        </div>
+        <!-- Scripts-->
+        <script src="scripts/app.js"></script>
+
+        <!--Copiez et collez ces scripts en bas de votre balise <body>, et ce, avant d'utiliser les services Firebase :-->
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+        <script src="scripts/database.js"></script>
+
+    </body>
+</html>
